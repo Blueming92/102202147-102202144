@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="header">
+        <input type="text" id="search" placeholder="搜索用户..." bindinput="onSearchInput" />
+    </view>
+    <view class="content">
+        <view class="sidebar">
+            <text class="sidebar-title">技能选择</text>
+            <view id="skills-list">
+                <view data-skill="编程" bindtap="onSkillSelect">编程</view>
+                <view data-skill="建模" bindtap="onSkillSelect">建模</view>
+                <view data-skill="设计" bindtap="onSkillSelect">设计</view>
+                <view data-skill="营销" bindtap="onSkillSelect">营销</view>
+                <view data-skill="写作" bindtap="onSkillSelect">写作</view>
+            </view>
+        </view>
+        <view class="user-list">
+            <text class="user-list-title">具备该技能的用户</text>
+            <view id="users">
+                <block wx:for="{{filteredUsers}}" wx:key="index">
+                    <view>{{item.name}}</view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

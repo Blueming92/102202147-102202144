@@ -1,0 +1,10 @@
+<!-- pages/want/want.wxml -->
+<view class="container">
+  <text class="title">你想</text>
+  <view class="button-container">
+    <button class="nav-btn" bindtap="findProject">找项目</button>
+    <button class="nav-btn" bindtap="findPartner">找伙伴</button>
+    <button class="nav-btn" bindtap="publishProject">项目发布</button>
+    <button class="nav-btn" bindtap="publishPersonal">个人发布</button>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<!-- pages/findProject/findProject.wxml -->
+
+<view class="container">
+  <view class="header">
+    <button class="btn" bindtap="switchProjects" data-type="学科竞赛">学科竞赛</button>
+    <button class="btn" bindtap="switchProjects" data-type="个人项目">个人项目</button>
+  </view>
+  <view class="projects">
+    <view class="project-item" wx:for="{{projects}}" wx:key="{{item.id}}">
+      <text class="project-name">{{item.name}}</text>
+      <text class="project-desc">{{item.desc}}</text>
+      <text class="project-count">参与人数: {{item.count}}</text>
+    </view>
+  </view>
+</view>

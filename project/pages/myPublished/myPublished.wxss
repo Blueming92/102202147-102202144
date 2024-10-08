@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  padding: 20rpx;
+  background-color: #f7f7f7; /* 背景色 */
+  height: 100vh; /* 使容器占满整个视口高度 */
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.section-container {
+  display: flex;
+  flex: 1; /* 占据剩余空间 */
+  justify-content: space-between; /* 平均分配空间 */
+}
+
+.section {
+  flex: 1; /* 每个 section 平均占据一半 */
+  margin: 10rpx; /* 添加边距以间隔 */
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  padding: 15rpx 80rpx 5rpx; /* 上、左右内边距适当调整，底部边距减少 */
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 5rpx; /* 减少下边距 */
+}
+
+.content {
+  max-height: calc(100vh - 150rpx); /* 根据需要调整最大高度 */
+  overflow-y: auto; /* 启用滚动条 */
+}
+
+.item {
+  padding: 10rpx;
+  border-bottom: 1rpx solid #eaeaea; /* 项目之间的分割线 */
+}
+
+.item:last-child {
+  border-bottom: none; /* 最后一项不显示分割线 */
+}
+
+.no-content {
+  color: #999;
+  text-align: center;
+  padding: 20rpx;
+}

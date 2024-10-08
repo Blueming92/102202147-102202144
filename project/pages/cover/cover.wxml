@@ -1,0 +1,3 @@
+<view class="container">
+  <button bindtap="onEnter">进入</button>
+</view>

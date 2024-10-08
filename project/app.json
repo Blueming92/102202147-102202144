@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/cover/cover",
+    "pages/index/index",
+    "pages/information/information",
+    "pages/something/something",
+    "pages/want/want",
+    "pages/logs/logs",
+    "pages/messages/messages", 
+    "pages/profile/profile" ,
+    "pages/findProject/findProject" ,
+    "pages/findPartner/findPartner",
+    "pages/publishProject/publishProject",
+    "pages/publishPersonal/publishPersonal",
+    "pages/myPublished/myPublished",
+    "pages/myFavorites/myFavorites",
+    "pages/settings/settings",
+    "pages/feedback/feedback",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "海底捞捞",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#000000", 
+    "selectedColor": "#007aff", 
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/want/want",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

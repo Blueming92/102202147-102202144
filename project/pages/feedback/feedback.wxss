@@ -1,0 +1,41 @@
+/* pages/feedback/feedback.wxss */
+.container {
+  padding: 20rpx;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; /* 使背景图铺满整个页面 */
+  background-position: center; /* 让背景图居中显示 */
+  background-color: #f7f7f7; /* 背景色 */
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.input {
+  width: 97%;
+  height: 300rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  resize: none; /* 禁止调整大小 */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10rpx;
+  background-color: #007aff; /* 按钮颜色 */
+  color: #fff;
+  border: none;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+}

@@ -1,0 +1,49 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+@font-face {
+  font-family: "iconfont"; /* Project id 4703839 */
+  src: url('iconfont.woff2?t=1728375151511') format('woff2'),
+       url('iconfont.woff?t=1728375151511') format('woff'),
+       url('iconfont.ttf?t=1728375151511') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daohanglan_kongzhitaiicon_xuanzhong:before {
+  content: "\e60a";
+}
+
+.icon-daohanglan_kongzhitaiicon_moren:before {
+  content: "\e60b";
+}
+
+.icon-daohanglan_wenzhangguanliicon_xuanzhong:before {
+  content: "\e60c";
+}
+
+.icon-daohanglan_wenzhangguanliicon_moren:before {
+  content: "\e60d";
+}
+
+.icon-daohanglan_zhanghaoguanliicon_xuanzhong:before {
+  content: "\e60e";
+}
+
+.icon-daohanglan_zhanghaoguanliicon_moren:before {
+  content: "\e60f";
+}
+

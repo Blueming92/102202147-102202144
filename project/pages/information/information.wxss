@@ -1,0 +1,48 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; /* 使背景图铺满整个页面 */
+  background-position: center; /* 让背景图居中显示 */
+  color: white; /* 设置文本颜色，以便在背景上可读 */
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* 边框颜色 */
+  border-radius: 4px;
+  background-color: white; /* 输入框背景为白色 */
+  color: black; /* 输入框内文本颜色为黑色 */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 123, 255, 0.8); /* 半透明的按钮背景 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 86, 179, 0.8); /* 半透明的悬停效果 */
+}

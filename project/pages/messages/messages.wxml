@@ -1,0 +1,21 @@
+<!-- messageList.wxml -->
+<view class="container">
+  <scroll-view scroll-y="true" style="height: 100vh;">
+    <block wx:for="{{messages}}" wx:key="id">
+      <view class="message-item" data-id="{{item.id}}" bindtap="goToChat">
+        <view class="avatar">
+          <image src="{{item.avatarUrl}}" mode="aspectFill"/>
+        </view>
+        <view class="content">
+          <view class="username">{{item.username}}</view>
+          <view class="last-message">{{item.lastMessage}}</view>
+          <view class="time">{{item.time}}</view>
+          <view class="unread" wx:if="{{item.unread > 0}}">
+            <text>{{item.unread}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="divider"></view>
+    </block>
+  </scroll-view>
+</view>

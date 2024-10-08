@@ -1,0 +1,7 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="container">
+  <view class="form">
+    <textarea class="input" placeholder="请输入内容" bindinput="onFeedbackInput"></textarea>
+    <button class="submit-button" bindtap="onSubmit">提交</button>
+  </view>
+</view>

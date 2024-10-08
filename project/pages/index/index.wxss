@@ -1,0 +1,83 @@
+/**index.wxss**/
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+    background-size: cover; /* 使背景图铺满整个页面 */
+    background-position: center; /* 让背景图居中显示 */
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(136, 132, 132);
+  width: 80%;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.nickname-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: .5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.nickname-label {
+  width: 105px;
+}
+
+.nickname-input {
+  flex: 1;
+}
+
+.gender-wrapper {
+  margin-top: 20px;
+}
+
+.gender-label {
+  font-size: 16px;
+}
+
+.gender-picker {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+

@@ -1,0 +1,22 @@
+<view class="container">
+  <text class="title">个人信息填写</text>
+  <form bindsubmit="onSubmit">
+    <view class="form-group">
+      <label for="student-id">学号:</label>
+      <input type="text" id="student-id" placeholder="请输入学号" bindinput="onInput" data-field="studentId" />
+    </view>
+    <view class="form-group">
+      <label for="name">姓名:</label>
+      <input type="text" id="name" placeholder="请输入姓名" bindinput="onInput" data-field="name" />
+    </view>
+    <view class="form-group">
+      <label for="department">学院:</label>
+      <input type="text" id="department" placeholder="请输入学院" bindinput="onInput" data-field="department" />
+    </view>
+    <view class="form-group">
+      <label for="major">专业:</label>
+      <input type="text" id="major" placeholder="请输入专业" bindinput="onInput" data-field="major" />
+    </view>
+    <button formType="submit">提交</button>
+  </form>
+</view>

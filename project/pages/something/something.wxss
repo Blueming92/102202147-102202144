@@ -1,0 +1,46 @@
+/* pages/something/something.wxss */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; /* 使背景图铺满整个页面 */
+  background-position: center; /* 让背景图居中显示 */
+  color: rgb(0, 0, 0); /* 设置文本颜色，以便在背景上可读 */
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.picker {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* 按钮垂直排列 */
+  align-items: center; /* 按钮水平居中 */
+  margin-top: 20px; /* 按钮容器与上方内容的间距 */
+}
+
+button {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007aff; /* 蓝色背景 */
+  color: white;
+  font-size: 16px;
+}

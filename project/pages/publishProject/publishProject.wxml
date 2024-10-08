@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="form">
+    <view class="form-item">
+      <text class="label">项目名称:</text>
+      <input class="input" type="text" placeholder="请输入项目名称" bindinput="onProjectNameInput"/>
+    </view>
+    <view class="form-item">
+      <text class="label">项目类型:</text>
+      <picker mode="selector" range="{{projectTypes}}" bindchange="onProjectTypeChange">
+        <view class="picker">{{projectType ? projectType : '请选择项目类型'}}</view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <text class="label">项目方向:</text>
+      <input class="input" type="text" placeholder="请输入项目方向" bindinput="onProjectDirectionInput"/>
+    </view>
+    <view class="form-item">
+      <text class="label">项目简介:</text>
+      <textarea class="textarea" placeholder="请输入项目简介" bindinput="onProjectIntroductionInput"/>
+    </view>
+    <view class="form-item">
+      <text class="label">项目需求:</text>
+      <textarea class="textarea" placeholder="请输入项目需求" bindinput="onProjectRequirementsInput"/>
+    </view>
+    <view class="form-item">
+      <button bindtap="onSubmit">发布</button>
+    </view>
+  </view>
+</view>

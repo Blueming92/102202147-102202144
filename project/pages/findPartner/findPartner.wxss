@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; /* 使背景图铺满整个页面 */
+  background-position: center; /* 让背景图居中显示 */
+  color: rgb(0, 0, 0); /* 设置文本颜色，以便在背景上可读 */
+}
+.header {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  width: 80%;
+}
+
+.sidebar {
+  width: 35%; /* 左侧占35% */
+  padding: 15px;
+  border: 1px solid #ccc; /* 添加边框 */
+  background-color: rgba(255, 255, 255, 0.6); /* 添加底色 */
+}
+
+.sidebar-title {
+  margin: 0 0 10px;
+}
+
+#skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills-list view {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#skills-list view:hover {
+  background-color: #ddd;
+}
+
+.user-list {
+  width: 65%; /* 右侧占65% */
+  padding: 15px;
+  border: 1px solid #ccc; /* 添加边框 */
+  background-color: rgba(255, 255, 255, 0.6)/* 添加底色 */
+}
+
+.user-list-title {
+  margin-top: 0;
+}
+
+#users {
+  list-style-type: none;
+  padding: 0;
+}
+

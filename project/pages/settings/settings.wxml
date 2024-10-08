@@ -1,0 +1,28 @@
+<!--pages/settings/settings.wxml-->
+<view class="container">
+  <view class="form">
+    <view class="form-item">
+      <text class="label">修改头像:</text>
+      <view class="avatar" bindtap="onAvatarChange">
+        <image src="{{avatarUrl}}" mode="aspectFill" class="avatar-image" />
+        <text class="change-avatar">点击更改头像</text>
+      </view>
+    </view>
+    
+    <view class="form-item">
+      <text class="label">修改昵称:</text>
+      <input class="input" type="text" placeholder="请输入昵称" bindinput="onNicknameInput"/>
+    </view>
+
+    <view class="form-item">
+      <text class="label">更改技能项:</text>
+      <picker mode="selector" range="{{skills}}" bindchange="onSkillChange">
+        <view class="picker">{{skill ? skill : '请选择技能'}}</view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <button bindtap="onSubmit">保存设置</button>
+    </view>
+  </view>
+</view>

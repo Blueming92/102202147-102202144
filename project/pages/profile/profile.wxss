@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* 垂直排列内容 */
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; /* 使背景图铺满整个页面 */
+  background-position: center; /* 让背景图居中显示 */
+  color: rgb(0, 0, 0); /* 设置文本颜色，以便在背景上可读 */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; /* 增加用户信息与按钮之间的间距 */
+}
+
+.avatar {
+  width: 80px; /* 头像宽度 */
+  height: 80px; /* 头像高度 */
+  border-radius: 50%; /* 圆形头像 */
+  margin-bottom: 10px; /* 头像与昵称之间的间距 */
+}
+
+.nickname {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* 垂直排列按钮 */
+  width: 80%; /* 使按钮宽度占满 */
+}
+
+.nav-btn {
+  background-color: #3c75b3;
+  color: white;
+  padding: 15px;
+  margin: 10px 0; /* 按钮之间的垂直间距 */
+  border-radius: 5px;
+  border: none; /* 移除边框 */
+  text-align: center; /* 使文本居中 */
+  font-size: 18px; /* 增大字体 */
+}

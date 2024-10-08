@@ -1,0 +1,60 @@
+.container {
+  padding: 20rpx;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; /* 使背景图铺满整个页面 */
+  background-position: center; /* 让背景图居中显示 */
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.6);
+    padding: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+    width: 90%; /* 设置宽度为90%，你可以根据需要调整这个值 */
+    margin: 0 auto; /* 居中显示 */
+}
+
+.form-item {
+  margin-bottom: 20rpx;
+}
+
+.label {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.input {
+  width: 97%;
+  padding: 10rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+}
+
+.textarea {
+  width: 97%;
+  min-height: 100rpx;
+  padding: 10rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+}
+
+.picker {
+  
+  padding: 10rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+}
+
+.button {
+
+  color: #fff;
+  padding: 10rpx 0;
+  margin-top: 20rpx;
+  border-radius: 5rpx;
+}

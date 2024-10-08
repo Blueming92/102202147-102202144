@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="header">用户</view>
+  <view class="message-list">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="message {{item.from}}">
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="input-area">
+    <input class="input" placeholder="请输入消息..." bindinput="onInput" value="{{inputValue}}" />
+    <button class="send-button" bindtap="sendMessage">发送</button>
+  </view>
+</view>

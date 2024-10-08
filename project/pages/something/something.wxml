@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="section">
+        <text class="title">请输入你拥有的技能（用逗号分隔）</text>
+        <input 
+            type="text" 
+            placeholder="例如：Python, Java, C++" 
+            bindinput="onSkillsInput" 
+        />
+    </view>
+
+    <view class="section">
+        <text class="title">请输入你感兴趣的内容（用逗号分隔）</text>
+        <input 
+            type="text" 
+            placeholder="例如：Web开发, 游戏开发, 大数据处理" 
+            bindinput="onInterestsInput" 
+        />
+    </view>
+
+    <view class="button-container">
+        <button class="btn" bindtap="onStart">开始使用</button>
+        <button class="btn" bindtap="onSkip">跳过</button>
+    </view>
+</view>

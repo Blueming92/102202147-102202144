@@ -1,0 +1,33 @@
+<view class="container">
+  <text class="title">我的发布</text>
+  
+  <view class="section-container">
+    <view class="section">
+      <text class="section-title">我的项目发布</text>
+      <view class="content">
+        <block wx:if="{{projects.length > 0}}">
+          <view wx:for="{{projects}}" wx:key="id" class="item">
+            <text>{{item.title}}</text> <!-- 假设项目有一个title属性 -->
+          </view>
+        </block>
+        <block wx:else>
+          <text class="no-content">暂未有发布</text>
+        </block>
+      </view>
+    </view>
+
+    <view class="section">
+      <text class="section-title">我的个人发布</text>
+      <view class="content">
+        <block wx:if="{{personals.length > 0}}">
+          <view wx:for="{{personals}}" wx:key="id" class="item">
+            <text>{{item.title}}</text> <!-- 假设个人发布有一个title属性 -->
+          </view>
+        </block>
+        <block wx:else>
+          <text class="no-content">暂未有发布</text>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

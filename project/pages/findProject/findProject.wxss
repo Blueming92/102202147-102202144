@@ -1,0 +1,51 @@
+/* pages/findProject/findProject.wxss */
+
+.container {
+  padding: 20rpx;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40rpx;
+}
+
+.btn {
+  flex-grow: 1;
+  margin: 5rpx;
+}
+
+.projects {
+  display: block;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #333;
+}
+
+.project-item {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.project-name {
+  font-size: 32rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+
+.project-desc {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.project-count {
+  font-size: 28rpx;
+  color: #999;
+}
