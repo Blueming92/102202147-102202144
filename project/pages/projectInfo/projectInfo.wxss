@@ -1,0 +1,49 @@
+/* pages/projectInfo/projectInfo.wxss */
+/* 页面背景 */
+page {
+  background-color: #f8f9fa;
+}
+
+/* 主容器 */
+.container {
+  padding: 20px;
+}
+
+/* 项目名称样式 */
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 项目类型、方向、发起人样式 */
+.project-info {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* 项目简介和需求样式 */
+.project-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* 聊一聊按钮样式 */
+.chat-button {
+  background-color: #007aff; /* 蓝色背景 */
+  color: white; /* 白色文字 */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* 按钮悬停效果 */
+.chat-button:hover {
+  background-color: #005bb5; /* 深蓝色 */
+  cursor: pointer;
+}

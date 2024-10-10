@@ -1,0 +1,10 @@
+<!--pages/projectInfo/projectInfo.wxml-->
+<view class="container">
+  <text class="project-name">项目名称: {{project.name}}</text>
+  <text class="project-info">项目类型: {{project.type}}</text>
+  <text class="project-info">项目方向: {{project.direction}}</text>
+  <text class="project-desc">项目简介: {{project.desc}}</text>
+  <text class="project-desc">项目需求: {{project.requirements}}</text>
+  <text class="project-info">项目发起人: {{project.initiator}}</text>
+  <button class="chat-button" bindtap="navigateToChat">聊一聊</button>
+</view>
