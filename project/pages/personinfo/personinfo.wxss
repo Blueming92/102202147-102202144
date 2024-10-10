@@ -1,0 +1,61 @@
+/* 页面背景 */
+page {
+  background-color: #f8f9fa; /* 页面背景颜色 */
+}
+
+/* 主容器 */
+.container {
+  padding: 20px;
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 垂直方向排列 */
+  justify-content: space-between; /* 内容之间留出空间 */
+  height: 100vh; /* 设置容器高度为100%视口高度 */
+}
+
+/* 人员详情容器 */
+.person-detail {
+  flex: 1; /* 允许此部分占据可用空间 */
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 垂直方向排列 */
+  justify-content: space-evenly; /* 内容均匀分布 */
+  background-color: #fff; /* 背景颜色为白色 */
+  padding: 20px; /* 内边距 */
+  border-radius: 8px; /* 圆角边框 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 自我介绍样式 */
+.person-introduction {
+  font-size: 24px; /* 字体大小 */
+  font-weight: bold; /* 粗体 */
+  color: #333; /* 字体颜色 */
+  text-align: center; /* 文本居中 */
+}
+
+/* 技能和电子邮件样式 */
+.person-info {
+  font-size: 16px; /* 字体大小 */
+  color: #555; /* 字体颜色 */
+  text-align: left; /* 左对齐 */
+}
+
+/* 聊一聊按钮样式 */
+.chat-button {
+  background-color: #007aff; /* 蓝色背景 */
+  color: white; /* 白色文字 */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: auto; /* 将按钮放到容器底部 */
+  position: absolute; /* 绝对定位 */
+  bottom: 10%; /* 距离底部 25% 的位置，即 3/4 处 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中偏移 */
+}
+
+/* 按钮悬停效果 */
+.chat-button:hover {
+  background-color: #005bb5; /* 深蓝色 */
+  cursor: pointer;
+}

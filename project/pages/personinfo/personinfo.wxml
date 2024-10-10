@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="person-detail">
+    <!-- 显示自我介绍 -->
+    <text class="person-introduction">自我介绍: {{person.introduction}}</text>
+
+    <!-- 显示技能 -->
+    <text class="person-info">技能: {{person.skills}}</text>
+
+    <!-- 显示电子邮件 -->
+    <text class="person-info">电子邮件: {{person.email}}</text>
+  </view>
+
+  <!-- 按钮：跳转到聊天页面 -->
+  <button class="chat-button" bindtap="navigateToChat">聊一聊</button>
+</view>

@@ -1,73 +1,70 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh; /* 设置容器高度为视口高度 */
   background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
   background-size: cover; /* 使背景图铺满整个页面 */
   background-position: center; /* 让背景图居中显示 */
   color: rgb(0, 0, 0); /* 设置文本颜色，以便在背景上可读 */
 }
-.header {
-  background-color: #ffffff;
-  padding: 10px;
-  text-align: center;
+
+/* 技能选择框样式 */
+.form {
+  margin-bottom: 20px; /* 底部边距 */
 }
 
-.header input {
-  width: 50%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.content {
+/* 每个技能项的样式 */
+.checkbox-group {
   display: flex;
-  flex: 1;
-  width: 80%;
+  flex-direction: column; /* 纵向排列 */
 }
 
-.sidebar {
-  width: 35%; /* 左侧占35% */
-  padding: 15px;
-  border: 1px solid #ccc; /* 添加边框 */
-  background-color: rgba(255, 255, 255, 0.6); /* 添加底色 */
+/* 每个复选框标签的样式 */
+.checkbox-group label {
+  display: flex; /* Flex布局 */
+  align-items: center; /* 垂直居中 */
+  margin-bottom: 8px; /* 底部边距 */
+  padding: 10px; /* 内边距 */
+  background-color: #ffffff; /* 背景颜色 */
+  border-radius: 5px; /* 圆角 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
 }
 
-.sidebar-title {
-  margin: 0 0 10px;
+/* 选中的复选框样式 */
+.checkbox-group label checkbox:checked {
+  background-color: #2196F3; /* 选中时的背景颜色 */
 }
 
-#skills-list {
-  list-style-type: none;
-  padding: 0;
+/* 人员列表样式 */
+.person-list {
+  margin-top: 20px; /* 顶部边距 */
 }
 
-#skills-list view {
-  padding: 8px;
-  cursor: pointer;
+/* 每个人员项的样式 */
+.person-item {
+  padding: 12px; /* 内边距 */
+  background-color: #ffffff; /* 背景颜色 */
+  border-radius: 5px; /* 圆角 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  margin-bottom: 12px; /* 底部边距 */
 }
 
-#skills-list view:hover {
-  background-color: #ddd;
+/* 人员昵称标题样式 */
+.person-title {
+  font-size: 18px; /* 字体大小 */
+  font-weight: bold; /* 字体加粗 */
 }
 
-.user-list {
-  width: 65%; /* 右侧占65% */
-  padding: 15px;
-  border: 1px solid #ccc; /* 添加边框 */
-  background-color: rgba(255, 255, 255, 0.6)/* 添加底色 */
+/* 人员技能样式 */
+.person-skills {
+  font-size: 14px; /* 字体大小 */
+  color: #666666; /* 字体颜色 */
 }
 
-.user-list-title {
-  margin-top: 0;
+/* 加载状态的提示样式 */
+.loading {
+  text-align: center; /* 水平居中 */
+  margin-top: 20px; /* 顶部边距 */
+  font-size: 16px; /* 字体大小 */
+  color: #888888; /* 字体颜色 */
 }
-
-#users {
-  list-style-type: none;
-  padding: 0;
-}
-

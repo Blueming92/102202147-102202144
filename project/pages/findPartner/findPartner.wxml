@@ -1,25 +1,36 @@
 <view class="container">
-    <view class="header">
-        <input type="text" id="search" placeholder="搜索用户..." bindinput="onSearchInput" />
+  <!-- 顶部技能选择框 -->
+  <view class="form">
+    <view>
+      <view>
+        <checkbox-group bindchange="onSkillChange">
+          <block wx:for="{{skills}}" wx:key="index">
+            <label>
+              <checkbox value="{{item}}"></checkbox>
+              {{item}}
+            </label>
+          </block>
+        </checkbox-group>
+      </view>
     </view>
-    <view class="content">
-        <view class="sidebar">
-            <text class="sidebar-title">技能选择</text>
-            <view id="skills-list">
-                <view data-skill="编程" bindtap="onSkillSelect">编程</view>
-                <view data-skill="建模" bindtap="onSkillSelect">建模</view>
-                <view data-skill="设计" bindtap="onSkillSelect">设计</view>
-                <view data-skill="营销" bindtap="onSkillSelect">营销</view>
-                <view data-skill="写作" bindtap="onSkillSelect">写作</view>
-            </view>
-        </view>
-        <view class="user-list">
-            <text class="user-list-title">具备该技能的用户</text>
-            <view id="users">
-                <block wx:for="{{filteredUsers}}" wx:key="index">
-                    <view>{{item.name}}</view>
-                </block>
-            </view>
-        </view>
+  </view>
+
+  <!-- 人员列表 -->
+  <view class="person-list">
+    <view class="person-item" wx:for="{{persons}}" wx:key="_id" bindtap="viewpersonDetails" data-id="{{item._id}}">
+      <text class="person-title">{{item.title}}</text>
+      <text class="person-introduction">自我介绍: {{item.introduction}}</text> <!-- 显示自我介绍 -->
+      <text class="person-skills">技能: {{item.skills.join(', ')}}</text>
     </view>
+  </view>
+
+  <!-- 如果正在加载，显示加载中 -->
+  <view wx:if="{{loading}}" class="loading">
+    <text>加载中...</text>
+  </view>
+
+  <!-- 如果没有更多数据，显示提示 -->
+  <view wx:if="{{!hasMore && !loading}}" class="no-more">
+    <text>没有更多数据了</text>
+  </view>
 </view>

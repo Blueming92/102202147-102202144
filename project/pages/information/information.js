@@ -17,7 +17,7 @@ Page({
 
   // 提交详细信息
   onSubmit(e) {
-    const { studentId, name, department, major } = this.data;
+    const { studentId, name, department, major  } = this.data;
 
     // 检查所有字段是否填写
     if (!studentId || !name || !department || !major) {

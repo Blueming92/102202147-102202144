@@ -11,6 +11,8 @@
     "pages/findProject/findProject" ,
     "pages/findPartner/findPartner",
     "pages/projectinfo/projectinfo",
+    "pages/personinfo/personinfo",
+
     "pages/publishProject/publishProject",
     "pages/publishPersonal/publishPersonal",
     "pages/myPublished/myPublished",
