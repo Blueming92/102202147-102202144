@@ -36,3 +36,8 @@
 （3） 设置
 
 （4） 反馈
+
+扫码体验（需要提交申请）
+
+![894646a4eefbf23255bbe382598893cc](https://github.com/user-attachments/assets/38e38a68-bf88-4599-a29a-022c6cfc61c2)
+
