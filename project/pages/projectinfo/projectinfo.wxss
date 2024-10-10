@@ -1,0 +1,66 @@
+/* pages/projectInfo/projectInfo.wxss */
+/* 页面背景 */
+page {
+  background-color: #f8f9fa;
+}
+
+/* 主容器 */
+.container {
+  padding: 20px;
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 垂直方向排列 */
+  justify-content: space-between; /* 内容之间留出空间 */
+  height: 100vh; /* 设置容器高度为100%视口高度 */
+}
+
+/* 项目详情容器 */
+.project-detail {
+  flex: 1; /* 允许此部分占据可用空间 */
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 垂直方向排列 */
+  justify-content: space-evenly; /* 内容均匀分布 */
+}
+
+/* 项目名称样式 */
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* 文本居中 */
+}
+
+/* 项目类型、方向、发起人样式 */
+.project-info {
+  font-size: 16px;
+  color: #555;
+  text-align: left; /* 左对齐 */
+}
+
+/* 项目需求样式 */
+.project-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8; /* 增加行间距以便于阅读 */
+  text-align: left; /* 左对齐 */
+}
+
+/* 聊一聊按钮样式 */
+.chat-button {
+  background-color: #007aff; /* 蓝色背景 */
+  color: white; /* 白色文字 */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: auto; /* 将按钮放到容器底部 */
+  position: absolute; /* 绝对定位 */
+  bottom: 25%; /* 距离底部 25% 的位置，即 3/4 处 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中偏移 */
+}
+
+/* 按钮悬停效果 */
+.chat-button:hover {
+  background-color: #005bb5; /* 深蓝色 */
+  cursor: pointer;
+}

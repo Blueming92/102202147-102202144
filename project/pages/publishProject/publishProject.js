@@ -56,18 +56,38 @@ Page({
     // 提交表单逻辑
     console.log('提交项目信息:', this.data);
     
-    // 这里可以发送请求到服务器，提交项目信息
-    wx.showToast({
-      title: '发布成功',
-      icon: 'success',
-      duration: 2000,
+    // 发送请求到服务器，提交项目信息
+    wx.cloud.callFunction({
+      name: 'put_project', // 替换为你的云函数名称
+      data: {
+        projectName,
+        projectType,
+        projectDirection,
+        projectIntroduction,
+        projectRequirements,
+      },
+      success: res => {
+        console.log('上传成功:', res);
+        wx.showToast({
+          title: '发布成功',
+          icon: 'success',
+          duration: 2000,
+        });
+        // 使用 setTimeout 延迟跳转
+        setTimeout(() => {
+          wx.switchTab({
+            url: '../want/want'
+          });
+        }, 2000);
+      },
+      fail: err => {
+        console.error('上传失败:', err);
+        wx.showToast({
+          title: '发布失败，请重试',
+          icon: 'none',
+          duration: 2000,
+        });
+      }
     });
-    
-    // 使用 setTimeout 延迟跳转
-    setTimeout(() => {
-      wx.switchTab({
-        url: '../want/want'
-      });
-    }, 2000);
   }
 });

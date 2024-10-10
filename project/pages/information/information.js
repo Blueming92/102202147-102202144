@@ -1,3 +1,4 @@
+// pages/information/information.js
 Page({
   data: {
     studentId: '',
@@ -6,6 +7,7 @@ Page({
     major: ''
   },
 
+  // 处理输入变化
   onInput(e) {
     const { field } = e.currentTarget.dataset;
     this.setData({
@@ -13,8 +15,11 @@ Page({
     });
   },
 
+  // 提交详细信息
   onSubmit(e) {
     const { studentId, name, department, major } = this.data;
+
+    // 检查所有字段是否填写
     if (!studentId || !name || !department || !major) {
       wx.showToast({
         title: '请填写所有字段',
@@ -22,27 +27,36 @@ Page({
       });
       return;
     }
-    
-    // 提交逻辑
-    wx.showToast({
-      title: '提交成功',
-      icon: 'success',
-      duration: 2000 // 显示时间为2秒
+
+    // 将用户信息存储在本地
+    const userInfo = wx.getStorageSync('userInfo');
+    if (!userInfo) {
+      wx.showToast({
+        title: '用户信息未找到，请返回重新填写',
+        icon: 'none'
+      });
+      return;
+    }
+
+    // 将第二页输入的数据存储到本地
+    wx.setStorageSync('studentInfo', {
+      studentId,
+      name,
+      department,
+      major
     });
 
-    // 延迟跳转到下一个页面
+    // 提示信息并跳转到第三页
+    wx.showToast({
+      title: '信息已保存，继续输入兴趣和技能',
+      icon: 'success'
+    });
+
+    // 延迟跳转到第三页
     setTimeout(() => {
       wx.navigateTo({
-        url: '../something/something' // 替换为你的目标页面路径
+        url: '../something/something' // 替换为你的第三页路径
       });
-
-      // 清空表单或处理其他逻辑
-      this.setData({
-        studentId: '',
-        name: '',
-        department: '',
-        major: ''
-      });
-    }, 2000); // 等待2秒后跳转
+    }, 2000);
   }
 });

@@ -10,6 +10,7 @@
     "pages/profile/profile" ,
     "pages/findProject/findProject" ,
     "pages/findPartner/findPartner",
+    "pages/projectinfo/projectinfo",
     "pages/publishProject/publishProject",
     "pages/publishPersonal/publishPersonal",
     "pages/myPublished/myPublished",

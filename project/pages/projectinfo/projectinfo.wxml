@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="project-detail">
+    <!-- 显示项目名称 -->
+    <text class="project-name">项目名称: {{project.projectName}}</text>
+
+    <!-- 显示项目类型 -->
+    <text class="project-info">项目类型: {{project.projectType}}</text>
+
+    <!-- 显示项目方向 -->
+    <text class="project-info">项目方向: {{project.projectDirection}}</text>
+
+    <!-- 显示项目需求 -->
+    <text class="project-info">项目需求:</text>
+    <text class="project-description">{{project.projectRequirements}}</text>
+
+    <!-- 显示项目发起人 -->
+    <text class="project-info">项目发起人: {{project.projectInitiator}}</text>
+  </view>
+
+  <!-- 按钮：跳转到聊天页面 -->
+  <button class="chat-button" bindtap="navigateToChat">聊一聊</button>
+</view>

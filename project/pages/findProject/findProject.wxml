@@ -1,15 +1,26 @@
-<!-- pages/findProject/findProject.wxml -->
-
 <view class="container">
+  <!-- 顶部切换按钮 -->
   <view class="header">
     <button class="btn" bindtap="switchProjects" data-type="学科竞赛">学科竞赛</button>
     <button class="btn" bindtap="switchProjects" data-type="个人项目">个人项目</button>
   </view>
+
+  <!-- 项目列表 -->
   <view class="projects">
-    <view class="project-item" wx:for="{{projects}}" wx:key="{{item.id}}">
-      <text class="project-name">{{item.name}}</text>
-      <text class="project-desc">{{item.desc}}</text>
+    <view class="project-item" wx:for="{{projects}}" wx:key="_id" bindtap="viewProjectDetails" data-id="{{item._id}}">
+      <text class="project-name">{{item.projectName}}</text>
+      <text class="project-desc">{{item.projectIntroduction}}</text>
       <text class="project-count">参与人数: {{item.count}}</text>
     </view>
+  </view>
+
+  <!-- 如果正在加载，显示加载中 -->
+  <view wx:if="{{loading}}" class="loading">
+    <text>加载中...</text>
+  </view>
+
+  <!-- 如果没有更多数据，显示提示 -->
+  <view wx:if="{{!hasMore && !loading}}" class="no-more">
+    <text>没有更多数据了</text>
   </view>
 </view>

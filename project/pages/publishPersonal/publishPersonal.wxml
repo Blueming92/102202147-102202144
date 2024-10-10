@@ -1,11 +1,21 @@
 <view class="container">
   <view class="form">
     <view class="form-item">
-      <text class="label">技能项:</text>
-      <picker mode="selector" range="{{skills}}" bindchange="onSkillChange">
-        <view class="picker">{{skill ? skill : '请选择技能项'}}</view>
-      </picker>
+      <text class="label">已有技能:</text>
+      <view class="owned-skills">
+        <block wx:for="{{skills}}" wx:key="index">
+          <text class="skill-item">{{item}}</text>
+        </block>
+      </view>
     </view>
+    
+<view class="form-item">
+  <text class="label">技能项:</text>
+    <picker mode="selector" range="{{skills}}" bindchange="onSkillChange">
+      <view class="picker">{{selectedSkill ? selectedSkill : '请选择技能项'}}</view>
+  </picker>
+</view>
+
     
     <view class="form-item">
       <text class="label">简单说说自己吧:</text>
