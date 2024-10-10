@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="form">
+    <view>
+      <view>
+        <checkbox-group bindchange="onSkillChange">
+          <block wx:for="{{skills}}" wx:key="index">
+            <label>
+              <checkbox value="{{item}}"></checkbox>
+              {{item}}
+            </label>
+          </block>
+        </checkbox-group>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <text class="label">简单说说自己吧:</text>
+      <input class="input" type="text" placeholder="请输入介绍" bindinput="onSelfIntroductionInput"/>
+    </view>
+    
+    <view class="form-item">
+      <text class="label">我希望的伙伴:</text>
+      <input class="input" type="text" placeholder="请输入期望的伙伴" bindinput="onPartnerExpectationInput"/>
+    </view>
+    
+    <view class="form-item">
+      <view class="button" bindtap="onSubmit">发布</view>
+    </view>
+  </view>
+</view>

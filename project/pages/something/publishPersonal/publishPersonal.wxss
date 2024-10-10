@@ -1,0 +1,61 @@
+.container {
+  padding: 20rpx;
+  height: 100vh; /* 保持全屏 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img2024.cnblogs.com/blog/3512259/202410/3512259-20241008134207239-1140249015.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.6);
+    padding: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+    width: 90%; /* 设置宽度为90%，你可以根据需要调整这个值 */
+    margin: 0 auto; /* 居中显示 */
+}
+
+.form-item {
+  margin-bottom: 40rpx; /* 增加间距 */
+}
+
+.label {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.input {
+  width: 97%;
+  padding: 10rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+  height: 180rpx; /* 增加输入框高度 */
+}
+
+.textarea {
+  width: 97%;
+  min-height: 120rpx; /* 增加文本区域高度 */
+  padding: 10rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+}
+
+.picker {
+  padding: 10rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5rpx;
+  height: 50rpx; /* 增加选择框高度 */
+}
+
+.button {
+  color: #fff;
+  background-color: #007aff; /* 设置按钮背景色 */
+  padding: 12rpx 0; /* 增加按钮上下内边距 */
+  text-align: center;
+  border-radius: 5rpx;
+}
